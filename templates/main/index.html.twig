@@ -4,18 +4,26 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <style>
-        body {
-            background-color: #808080;
-        }
-    </style>
+
 {% endblock %}
 
 {% block javascripts %}{% endblock %}
 
 {% block body %}
-    <h2>Página principal</h2>
-    <p>Contenido del body.</p>
-    <p>Esto es un fichero de estilo que se puede abrir haciendo click aquí: <a href="{{ asset('estilo.css') }}">estilo.css</a></p>
-    <p>Si quisiéramos usar una ruta absoluta podemos poner: {{ absolute_url(asset('estilo.css')) }}</p>
+    <div style="padding: 20px 30px 10px 30px">
+        {% set vars = {
+            'link': 'https://www.anii.org.uy/apoyos/innovacion/303/convocatoria-a-proyectos-de-hidrogeno-verde',
+            'image': 'https://www.anii.org.uy/upcms/thumbs/800x700c/llamados/imagenes/eimbhamxuaewiv-.jpeg',
+            'tag': 'Innovación',
+            'legend': 'Cierra el 08.06.2022',
+            'title': 'Convocatoria a proyectos de hidrógeno verde',
+            'estract': 'ANII, el Ministerio de Industria, energía y Minería (MIEM) y el laboratorio Tecnológico Uruguayo (LATU) crearon el Fondo Sectorial de Hidrógeno...'} %}
+        {% include 'square_banner.html.twig' with vars %}
+    </div>
+    <div class="home">
+        <h2>Página principal</h2>
+        <p>Contenido del body.</p>
+        <p>Esto es un fichero de estilo que se puede abrir haciendo click aquí: <a href="{{ asset('estilo.css') }}">estilo.css</a></p>
+        <p>Si quisiéramos usar una ruta absoluta podemos poner: {{ absolute_url(asset('estilo.css')) }}</p>
+    </div>
 {% endblock %}

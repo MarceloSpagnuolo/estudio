@@ -1,9 +1,12 @@
-<div style="border: 1px solid black; padding: 5px; margin: 5px; text-align: center;" id="header-div">
-    <h1><a href="{{ path('home') }}">Symfony: templating</a></h1>
-    <p>Esto es la zona para la cabecera.</p>
-    {% if arrayMenu is defined %}
-        {% for arrayMenuItem in arrayMenu %}
-            <a href="{{ path(arrayMenuItem) }}">{{ arrayMenuItem }}</a>
-        {% endfor %}
-    {% endif %}
+<div class="header">
+    <div>
+        <a href="{{ path('home') }}"><img src="https://www.anii.org.uy/html/img/logo_anni.png" alt="logo"</a>
+    </div>
+    <div>
+        {% if arrayMenu is defined %}
+            {% for arrayMenuItem in arrayMenu %}
+                <a href="{{ path(arrayMenuItem) }}">{{ arrayMenuItem }}</a>
+            {% endfor %}
+        {% endif %}
+    </div>
 </div>
