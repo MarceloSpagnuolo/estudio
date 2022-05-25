@@ -13,7 +13,7 @@ class MainController extends AbstractController
     {
         $pathName = "Home";
 
-        return $this->render('main/index.html.twig', [
+        return $this->render('home/index.html.twig', [
             'pathName' => $pathName,
         ]);
     }
@@ -23,7 +23,7 @@ class MainController extends AbstractController
     {
         $pathName = "Page 1";
 
-        return $this->render('main/page1.html.twig', [
+        return $this->render('home/page1.html.twig', [
             'pathName' => $pathName,
         ]);
     }
@@ -33,7 +33,7 @@ class MainController extends AbstractController
     {
         $pathName = "Page 2";
 
-        return $this->render('main/page2.html.twig', [
+        return $this->render('home/page2.html.twig', [
             'pathName' => $pathName,
         ]);
     }
@@ -43,7 +43,7 @@ class MainController extends AbstractController
     {
         $pathName = "Page 3";
 
-        return $this->render('main/page3.html.twig', [
+        return $this->render('home/page3.html.twig', [
             'pathName' => $pathName,
         ]);
     }

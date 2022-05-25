@@ -10,3 +10,4 @@ import "./styles/index";
 
 // start the Stimulus application
 import "./bootstrap";
+import "@fortawesome/fontawesome-free";

@@ -1,0 +1,46 @@
+<div style="display: flex">
+    <div style="padding: 30px 15px 30px 30px; width: 50vw; height: 82vh;">
+        {% set vars = {
+            'link': 'https://www.anii.org.uy/apoyos/innovacion/303/convocatoria-a-proyectos-de-hidrogeno-verde',
+            'image': 'https://www.anii.org.uy/upcms/thumbs/800x700c/llamados/imagenes/eimbhamxuaewiv-.jpeg',
+            'tag': 'Innovación',
+            'legend': 'Cierra el 08.06.2022',
+            'title': 'Convocatoria a proyectos de hidrógeno verde',
+            'estract': 'ANII, el Ministerio de Industria, energía y Minería (MIEM) y el laboratorio Tecnológico Uruguayo (LATU) crearon el Fondo Sectorial de Hidrógeno...'} %}
+        {% include 'home/banners/square_banner.html.twig' with vars %}
+    </div>
+    <div style="padding: 30px 30px 30px 15px; width: 50vw; height: 82vh;">
+        <div style="padding-bottom: 15px; height: 41vh; width: 100%;">
+            {% set vars = {
+                'link': 'https://www.anii.org.uy/apoyos/innovacion/50/fondo-sectorial-de-energia',
+                'image': 'https://www.anii.org.uy/upcms/thumbs/800x350c/llamados/imagenes/istock-584487610.jpg',
+                'tag': 'Innovación',
+                 'legend': 'Cierra el 07.06/2022',
+                 'title': 'Fondo Sectorial de Energía',
+                 'estract': '' } %}
+            {% include 'home/banners/half_banner.html.twig' with vars %}
+        </div>
+        <div style="display: flex; width: 100%; height: 41vh">
+            <div style="padding: 15px 15px 15px 0; width: 100%">
+                {% set vars = {
+                    'link': 'https://www.anii.org.uy/apoyos/emprendimientos/49/emprendedores-innovadores',
+                    'image': 'https://www.anii.org.uy/upcms/thumbs/370x340c/llamados/imagenes/parawebemprendimientos.jpg',
+                    'tag': 'Empresario',
+                    'legend': 'Postulación permanente',
+                    'title': 'Emprendedores Innovadores',
+                    'estract': '' } %}
+                {% include 'home/banners/square_banner.html.twig' with vars %}
+            </div>
+            <div style="padding: 15px 0px 15px 15px; width: 100%">
+                {% set vars = {
+                    'link': 'https://www.anii.org.uy/noticias/233/reconocidos-investigadores-del-pais-presentan-importantes-avances-en-el-conocimiento-medico-y-como-sus-logros-benefician-a-toda-la-poblacion',
+                    'image': 'https://www.anii.org.uy/upcms/thumbs/800x700c/noticias/contenidoprincipal/istock-481166102.jpg',
+                    'tag': "Noticia",
+                    'legend': '',
+                    'title': 'Reconocidos investigadores del país presentan importantes avances en el conocimiento médico y cómo sus logros beneficias a toda la población',
+                    'estract': 'Se trata del lanzamiento del fondo para proyectos de investigación en salud, con foco en investigación clínica que contará con la exposición de...' } %}
+                {% include 'home/banners/square_banner.html.twig' with vars %}
+            </div>
+        </div>
+    </div>
+</div>
