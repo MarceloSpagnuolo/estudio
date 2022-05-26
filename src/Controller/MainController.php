@@ -28,32 +28,32 @@ class MainController extends AbstractController
         ]);
     }
 
-    #[Route('/page2', name: 'page2')]
+    #[Route('/login', name: 'Login')]
     public function page2(): Response
     {
-        $pathName = "Page 2";
+        $pathName = "Login";
 
-        return $this->render('home/page2.html.twig', [
+        return $this->render('home/login.html.twig', [
             'pathName' => $pathName,
         ]);
     }
 
-    #[Route('/page3', name: 'page3')]
+    /* #[Route('/register', name: 'Register')]
     public function page3(): Response
     {
-        $pathName = "Page 3";
+        $pathName = "Sig In";
 
-        return $this->render('home/page3.html.twig', [
+        return $this->render('home/register.html.twig', [
             'pathName' => $pathName,
         ]);
-    }
+    } */
 
 
     #[Route("/render-header", name: "renderHeader")]
     public function renderHeader()
     {
         $arrayMenu = array(
-            'page1', 'page2', 'page3',
+            'page1', 'Login', 'Register',
         );
 
         return $this->render('menuheader.html.twig', [

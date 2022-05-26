@@ -4,3 +4,4 @@ export * from "./home.css";
 export * from "./footer.css";
 export * from "./banners/square_banner.css";
 export * from "./banners/half_banner.css";
+export * from "./register.css";
